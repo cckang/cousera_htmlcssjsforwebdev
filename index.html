@@ -18,32 +18,25 @@
 
 <body>
     <header>
-        <nav id="header-nav" class="navbar">
-            <!--nav bar content-->
-            <div class="container">
-                <!--logo-->
-                <div class="d-inline-flex align-item-start flex-row">
-                    <a class="navbar-header" href="index.html">
-                        <div id="logo-img">
-                            <img src="images/restaurant-logo_large.png" alt="logo">
-                        </div>
-                    </a>
+        <nav class="navbar navbar-expand-lg" id="navbarHeader">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                    <img src="images/restaurant-logo_large.png" alt="logo" id="brandLogo">
+                </a>
 
-                    <div class="d-inline-flex align-item-start flex-column">
-                        <!--brand name-->
-                        <a class="navbar-brand" href="index.html">
-                            <h1>David Chu's China Bistro</h1>
-                        </a>
-
-                        <!--cert logo-->
-                        <a class="navbar-brand">
-                            <p>
-                                <img src="images/star-k-logo.png" alt="Kosher certification">
-                                <span class="align-middle">Kosher certification</span>
-                            </p>
-                        </a>
-                    </div>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item" id="restaurantName">
+                            <a class="nav-link active" aria-current="page" href="#">David Chu's China Bistro</a>
+                        </li>
+                        <li class="nav-item">
+                            <img src="images/star-k-logo.png" alt="Kosher certificatio"
+                                class="d-inline-block align-text-middle" id="certLogoDesc">
+                            <span>Kosher certification</span>
+                        </li>
+                    </ul>
                 </div>
+
             </div>
         </nav>
     </header>
