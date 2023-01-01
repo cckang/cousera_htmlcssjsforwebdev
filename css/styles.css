@@ -26,15 +26,15 @@ body {
   line-height: 0.75;
 }
 
-.nav-item span {
+.navbarSupportedContent .nav-item span {
   color: #000;
   font-size: 0.8em;
   margin-top: 15px;
 }
 
-#nav-list {
-  margin-top: -65px;
-}
+/* #nav-list {
+  margin-top: 10px;
+} */
 
 #nav-list a {
   color: #951c49;
@@ -50,7 +50,7 @@ body {
 }
 
 #phone {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 #phone a {
