@@ -31,3 +31,35 @@ body {
   font-size: 0.8em;
   margin-top: 15px;
 }
+
+#nav-list {
+  margin-top: -65px;
+}
+
+#nav-list a {
+  color: #951c49;
+  text-align: center;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+}
+
+#phone {
+  margin-top: 20px;
+}
+
+#phone a {
+  text-align: right;
+  padding-bottom: 0px;
+}
+
+#phone div {
+  color: #557c3e;
+  text-align: right;
+  padding-right: 10px;
+}

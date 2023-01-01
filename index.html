@@ -8,7 +8,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--google material icon-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <!--google material icon-->
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -55,12 +57,34 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul id="nav-list" class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="menu-categories.html">
-                                <span class="d-none d-sm-none d-md-block material-icons">restaurant_menu</span>
+                            <a class="nav-link" href="menu-categories.html">
+                                <span
+                                    class="d-none d-lg-block d-xl-block d-xxl-block material-icons md-36">restaurant_menu</span>
                                 Menu
                             </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span
+                                    class="d-none d-lg-block d-xl-block d-xxl-block material-icons-outlined md-36">info</span>
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span
+                                    class="d-none d-lg-block d-xl-block d-xxl-block material-icons-outlined md-36">verified</span>
+                                Award
+                            </a>
+                        </li>
+
+                        <li id="phone" class="nav-item d-none d-lg-block d-xl-block d-xxl-block">
+                            <a class="nav-link" href="tel:410-602-5008">
+                                410-602-5008
+                            </a>
+                            <div>* We Deliver</div>
                         </li>
                     </ul>
                 </div>
