@@ -28,9 +28,7 @@
 
                     <!-- logo -->
                     <li class="collapse navbar-collapse nav-item mt-2 me-2 mb-2 ms-0">
-                        <a class="brandLogo" href="#">
-                            <img src="images/restaurant-logo_large.png" alt="logo">
-                        </a>
+                        <a class="brandLogo" href="#"> </a>
                     </li>
 
                     <!--restaurant name and cert logo-->
@@ -60,27 +58,24 @@
                         <ul id="nav-list" class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="menu-categories.html">
-                                    <span
-                                        class="d-sm-none d-md-block material-icons md-36">restaurant_menu</span>
+                                    <span class="d-none d-md-block material-icons md-36">restaurant_menu</span>
                                     Menu
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    <span
-                                        class="d-sm-none d-md-block material-icons-outlined md-36">info</span>
+                                    <span class="d-none d-md-block material-icons-outlined md-36">info</span>
                                     About
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    <span
-                                        class="d-sm-none d-md-block material-icons-outlined md-36">verified</span>
+                                    <span class="d-none d-md-block material-icons-outlined md-36">verified</span>
                                     Award
                                 </a>
                             </li>
 
-                            <li id="phone" class="nav-item d-sm-none d-md-block">
+                            <li id="phone" class="nav-item d-none d-md-block">
                                 <a class="nav-link" href="tel:410-602-5008">
                                     410-602-5008
                                 </a>
@@ -94,7 +89,48 @@
         </nav>
     </header>
 
-    <h1>Hello, world!</h1>
+    <div id="call-btn" class="d-block d-sm-block d-md-none">
+        <a class="btn btn-outline-primamry" href="tel:410-602-5008" role="button">
+            <span class="material-icons-outlined">call</span>
+            410-602-5008
+        </a>
+    </div>
+    <div id="xs-deliver" class="text-center d-block d-sm-block d-md-none">* We Deliver</div>
+
+    <div id="main-content" class="container">
+        <div class="my-4 mx-auto">
+            <img src="images/jumbotron_1200.jpg" alt="Picture Of Resstaurant"
+                class="img-fluid border border-dark border-2 shadow-sm rounded">
+        </div>
+
+        <div id="home-tiles" class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <a href="menu-categories.html">
+                    <div id="menu-tile"><span>menu</span></div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 cols-12">
+                <a href="single-category.html">
+                    <div id="specials-tile"><span>specials</span></div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-12">
+                <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.36359,-76.711688,15z/data=!4m5!3m4!1s0x0:0xab20a0e99daa17ea!8m2!3d39.3635903!4d-76.7116881?hl=en-US"
+                    target="_blank">
+                    <div id="map-tile">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24677.40206999746!2d-76.711688!3d39.36359!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2sus!4v1673880694854!5m2!1sen!2sus"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <span>map</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

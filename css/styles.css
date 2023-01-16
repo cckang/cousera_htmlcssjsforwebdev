@@ -15,6 +15,7 @@ body {
 .brandLogo {
   width: 150px;
   height: 150px;
+  background: url("../images/restaurant-logo_medium.png") no-repeat;
 }
 
 #restaurantName a {
@@ -64,8 +65,86 @@ body {
   padding-right: 10px;
 }
 
- .container-fluid button.navbar-toggler {
+.container-fluid button.navbar-toggler {
   border: 1px solid #61122f;
 }
 
 /*end of navigation bar*/
+
+/* call btn for small devices */
+#call-btn > a {
+  font-size: 1.5em;
+  display: block;
+  margin: 20px 20px 0px 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #f6b319;
+  color: #951c49;
+}
+
+#xs-deliver {
+  margin-top: 5px;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* content */
+#menu-tile,
+#specials-tile,
+#map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+}
+
+#menu-tile:hover,
+#specials-tile:hover,
+#map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background: url("../images/menu-tile.jpg") no-repeat;
+  background-position: center;
+}
+
+#specials-tile {
+  background: url("../images/specials-tile.jpg") no-repeat;
+  background-position: center;
+}
+
+#menu-tile span,
+#specials-tile span,
+#map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+}
+/* End of homepage */
+
+/* for large devices (>= large)*/
+@media (min-width: 992px) {
+  .brandLogo {
+    background: url("../images/restaurant-logo_large.png") no-repeat;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #menu-tile,
+  #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+}
