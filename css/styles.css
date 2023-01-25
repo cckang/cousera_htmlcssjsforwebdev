@@ -171,6 +171,84 @@ body {
 }
 /* End of footer panel */
 
+/* Menu categories */
+.category-tile {
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+/* End Of Menu categories */
+
+/* Single Category */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+
+.menu-item-tile hr {
+  width: 80%;
+}
+
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+.menu-item-tile .menu-item-price span {
+  font-size: 0.6em;
+}
+
+.menu-item-photo {
+  position: relative;
+  border: 2px, solid, #3f0c1f;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+
+.menu-item-description {
+  padding-right: 30px;
+}
+
+.menu-item-details {
+  font-size: 0.9em;
+  font-style: italic;
+}
+/* End of Single Category */
+
 /* for large devices (>= large)*/
 @media (min-width: 992px) {
   .brandLogo {
@@ -184,5 +262,30 @@ body {
   #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
+  }
+
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0px; /*margin already exist on the whole row*/
+  }
+
+  .panel-footer hr {
+    width: 50%;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+
+  .menu-item-description {
+    text-align: center;
   }
 }
